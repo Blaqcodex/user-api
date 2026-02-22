@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json()); // Parse JSON request bodies
 
 // Routes
-const usersRouter = require('./src/routes/users');
+const usersRouter = require('./routes/users');
 app.use('/users', usersRouter);
 
 // Health check route
